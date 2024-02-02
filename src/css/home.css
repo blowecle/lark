@@ -43,7 +43,7 @@
     }
 
     .blurb-container {
-        height: 400px;
+        height: 500px;
         display: flex;
         align-items: center;
     }
@@ -51,7 +51,7 @@
     .blurb {
         text-align: center;
         color: white;
-        font-size: .9rem;
+        font-size: 1.2rem;
         line-height: 1.5;
         padding-left: 30px;
         padding-right: 30px;
