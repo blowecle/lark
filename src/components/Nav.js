@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import '../css/nav.css'
+import { Link } from 'react-router-dom'
 
 export default function Nav() {
 
@@ -27,7 +28,9 @@ export default function Nav() {
   return (
         <header className="header">
             {/* <img src="https://cdn.icon-icons.com/icons2/3298/PNG/512/ui_menu_icon_208807.png" className="icon" onClick={setVisibility}/> */}
-            <img src={logo} alt="" className="logo"/>
+            <Link to="/">
+              <img src={logo} alt="" className="logo"/>
+            </Link>
             {/* <div className="desktop-nav">
                 <div className="desktop-link">Home</div>
                 <div className="desktop-link">About</div>
