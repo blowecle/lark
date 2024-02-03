@@ -4,6 +4,7 @@ import '../css/artists.css';
 import PreviewCard from './PreviewCard';
 
 export default function Artists() {
+    window.scrollTo(0, 0);
 
     const artists = require('../data/artists.json');
 

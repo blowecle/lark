@@ -1,3 +1,9 @@
+.logo-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .header {
     display: flex;
     flex-direction: row;
@@ -95,9 +101,13 @@
     }
     
     .logo {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
         align-self: center;
-        height: 100%;
-        width: auto;
+        height: 80%;
+        width: auto; /* Set width to auto */
     }
 }
 
@@ -109,9 +119,13 @@
     }
     
     .logo {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
         align-self: center;
-        height: 100%;
-        width: auto;
+        height: 80%;
+        width: auto; /* Set width to auto */
     }
 }
 
@@ -124,7 +138,6 @@
     
     .logo {
         display: flex;
-        align-self: flex-start;
         align-items: center;
         height: 90%;
         width: auto;
@@ -139,7 +152,6 @@
     }
     
     .logo {
-        align-self: flex-start;
         align-items: center;
         height: 80%;
         width: auto;

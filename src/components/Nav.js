@@ -28,7 +28,7 @@ export default function Nav() {
   return (
         <header className="header">
             {/* <img src="https://cdn.icon-icons.com/icons2/3298/PNG/512/ui_menu_icon_208807.png" className="icon" onClick={setVisibility}/> */}
-            <Link to="/">
+            <Link className="logo-wrapper" to="/">
               <img src={logo} alt="" className="logo"/>
             </Link>
             {/* <div className="desktop-nav">

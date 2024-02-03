@@ -3,6 +3,8 @@ import '../css/home.css'
 import { Link } from 'react-router-dom'
 
 export default function Home() {
+  window.scrollTo(0, 0);
+  
   return (
     <section className='container'>
       <div className="blurb-container">

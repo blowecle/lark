@@ -8,6 +8,15 @@
     width: 100%;
     height: 100%;
   }
+
+  .blurb-container {
+    background:
+    linear-gradient(
+  rgba(0, 0, 0, 0.5), /* Adjust the alpha for darkness */
+  rgba(0, 0, 0, 0.5)
+    ), url("https://www.dreamireland.com/_fileupload/image/lg-1524832364-Ennis_Co_Clare_2.jpg");
+    background-size: cover;
+}
   
 
 @font-face {
@@ -26,18 +35,14 @@
     z-index: 1;
 }
 
-.blurb-container {
-    background: url("https://www.dreamireland.com/_fileupload/image/lg-1524832364-Ennis_Co_Clare_2.jpg");
-    background-size: 100% 100%;
-}
-
 .button{
     background-color: #1c7e60;
     color: white;
     border: none;
 }
 
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 349px) {
+
     .container {
         margin-top: 100px;
     }
@@ -56,6 +61,279 @@
         padding-left: 30px;
         padding-right: 30px;
         font-family: LarkFont;
+    }
+
+    .button-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .button {
+        padding: 10px 20px;
+        font-size: 1.5rem;
+        font-family: LarkFont;
+        border-radius: 20px;
+        height: 50px;
+        width: 250px;
+        margin: 10px;
+    }
+}
+
+@media screen and (min-width: 350px) and (max-width: 449px) {
+
+    .container {
+        margin-top: 100px;
+    }
+
+    .blurb-container {
+        height: 500px;
+        display: flex;
+        align-items: center;
+    }
+
+    .blurb {
+        text-align: center;
+        color: white;
+        font-size: 1rem;
+        line-height: 1.5;
+        padding-left: 30px;
+        padding-right: 30px;
+        font-family: LarkFont;
+    }
+
+    .button-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .button {
+        padding: 10px 20px;
+        font-size: 1.5rem;
+        font-family: LarkFont;
+        border-radius: 20px;
+        height: 50px;
+        width: 250px;
+        margin: 10px;
+    }
+}
+
+@media screen and (min-width: 450px) and (max-width: 599px) {
+
+    .container {
+        margin-top: 100px;
+    }
+
+    .blurb-container {
+        height: 500px;
+        display: flex;
+        align-items: center;
+    }
+
+    .blurb {
+        text-align: center;
+        color: white;
+        font-size: 1.2rem;
+        line-height: 1.5;
+        padding-left: 30px;
+        padding-right: 30px;
+        font-family: LarkFont;
+    }
+
+    .button-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .button {
+        padding: 10px 20px;
+        font-size: 1.5rem;
+        font-family: LarkFont;
+        border-radius: 20px;
+        height: 50px;
+        width: 250px;
+        margin: 10px;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 899px) {
+
+    .container {
+        margin-top: 120px;
+    }
+
+    .blurb-container {
+        height: 500px;
+        display: flex;
+        align-items: center;
+    }
+
+    .blurb {
+        text-align: center;
+        color: white;
+        font-size: 1.4rem;
+        line-height: 1.5;
+        padding-left: 30px;
+        padding-right: 30px;
+        font-family: LarkFont;
+    }
+
+    .button-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .button {
+        padding: 10px 20px;
+        font-size: 1.5rem;
+        font-family: LarkFont;
+        border-radius: 20px;
+        height: 50px;
+        width: 250px;
+        margin: 10px;
+    }
+}
+
+@media screen and (min-width: 750px) and (max-width: 899px) {
+    .blurb {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1199px) {
+
+    .container {
+        margin-top: 140px;
+    }
+
+    .blurb-container {
+        height: 700px;
+        display: flex;
+        align-items: center;
+    }
+
+    .blurb {
+        text-align: center;
+        color: white;
+        font-size: 1.6rem;
+        line-height: 2;
+        padding-left: 30px;
+        padding-right: 30px;
+        font-family: LarkFont;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .button-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .button {
+        padding: 10px 20px;
+        font-size: 1.5rem;
+        font-family: LarkFont;
+        border-radius: 20px;
+        height: 50px;
+        width: 250px;
+        margin: 10px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+
+    .container {
+        margin-top: 160px;
+    }
+
+    .blurb-container {
+        height: 700px;
+        display: flex;
+        align-items: center;
+    }
+
+    .blurb {
+        text-align: center;
+        color: white;
+        font-size: 1.9rem;
+        line-height: 2;
+        padding-left: 30px;
+        padding-right: 30px;
+        font-family: LarkFont;
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+
+    .button-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .button {
+        padding: 10px 20px;
+        font-size: 1.5rem;
+        font-family: LarkFont;
+        border-radius: 20px;
+        height: 50px;
+        width: 250px;
+        margin: 10px;
+    }
+}
+
+@media screen and (min-width: 1400px){
+
+    .container {
+        margin-top: 200px;
+    }
+
+    .blurb-container {
+        height: 650px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+    }
+
+    .blurb {
+        text-align: center;
+        color: white;
+        font-size: 1.8rem;
+        line-height: 2;
+        padding-left: 30px;
+        padding-right: 30px;
+        font-family: LarkFont;
+        padding-left: 150px;
+        padding-right: 150px;
     }
 
     .button-container{
