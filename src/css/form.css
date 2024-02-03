@@ -2,7 +2,6 @@
     background-color: #d10000;
 }
 
-@media screen and (max-width: 599px){
     .form-container{
         display: flex;
         flex-direction: column;
@@ -16,5 +15,17 @@
     .form{
         width: 100%;
         height: 100%;
+    }
+
+
+@media screen and (min-width: 899px){
+    .form-container{
+        margin-top: 140px;
+    }
+}
+
+@media screen and (min-width: 1400px){
+    .form-container{
+        margin-top: 160px;
     }
 }
