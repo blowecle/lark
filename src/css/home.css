@@ -9,6 +9,10 @@
     height: 100%;
   }
 
+  .button {
+    cursor: pointer;
+  }
+
   .blurb-container {
     background:
     linear-gradient(
