@@ -1,3 +1,7 @@
+.artist-description{
+    text-align: center;
+}
+
 .artist-card {
     background: linear-gradient(
         rgba(0, 0, 0, 0.5), /* Adjust the alpha for darkness */
@@ -96,5 +100,99 @@ a{
 
     .youtube{
         width: 100%;
+    }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1199px) {
+    .artist-card {
+        width: 100vw;
+        margin-top: 140px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-size: 100% 100%;
+    }
+
+    .artist-image {
+        width: 60%;
+        margin-top: 20px;
+    }
+    
+    .artist-description{
+        width: calc(70vw - 40px);
+        font-family: LarkFont;
+        color: white;
+        line-height: 1.5;
+        font-size: 1.5rem;
+    }
+    
+    .artist-preview-image {
+        width: 90%;
+        margin-top: 20px;
+    }
+    .artist-info{
+        width: calc(100vw - 40px);
+        font-family: LarkFont;
+        color: white;
+        margin-bottom: 20px;
+    }
+
+    .youtube-embed{
+        width: 90%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: flex;
+    }
+
+    .youtube{
+        max-width: 100%;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .artist-card {
+        width: 100vw;
+        margin-top: 180px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-size: 100% 100%;
+    }
+
+    .artist-image {
+        width: 50%;
+        margin-top: 20px;
+    }
+    
+    .artist-description{
+        width: calc(70vw - 40px);
+        font-family: LarkFont;
+        color: white;
+        line-height: 1.5;
+        font-size: 1.5rem;
+    }
+    
+    .artist-preview-image {
+        width: 90%;
+        margin-top: 20px;
+    }
+    .artist-info{
+        width: calc(100vw - 40px);
+        font-family: LarkFont;
+        color: white;
+        margin-bottom: 20px;
+    }
+
+    .youtube-embed{
+        width: 90%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: flex;
+    }
+
+    .youtube{
+        max-width: 100%;
     }
 }

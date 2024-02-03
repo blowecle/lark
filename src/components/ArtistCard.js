@@ -15,7 +15,7 @@ export default function ArtistCard() {
     <div className='artist-container'>
         <div className='artist-card'>
             <div className='single-preview-card'>
-                <img src={artist.filepath} className='artist-preview-image' alt='artist' />
+                <img src={artist.filepath} className='artist-image' alt='artist' />
                 <h3 className='artist-preview-name'>{artist.name}</h3>
             </div>
             <div className='artist-info'>
