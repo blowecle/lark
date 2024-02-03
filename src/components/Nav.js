@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 export default function Nav() {
 
   // const [visible, setVisible] = useState(false)
-  const logo = require('../images/logo.avif')
+  // const logo = require('../images/logo.pdf')
 
   // useEffect(() => {
   //   console.log('visible is now ' + visible)
@@ -29,7 +29,7 @@ export default function Nav() {
         <header className="header">
             {/* <img src="https://cdn.icon-icons.com/icons2/3298/PNG/512/ui_menu_icon_208807.png" className="icon" onClick={setVisibility}/> */}
             <Link className="logo-wrapper" to="/">
-              <img src={logo} alt="" className="logo"/>
+              <img src="https://res.cloudinary.com/dyjzfdguj/image/upload/v1706987644/lark/logo_v52gof.png" alt="" className="logo"/>
             </Link>
             {/* <div className="desktop-nav">
                 <div className="desktop-link">Home</div>
