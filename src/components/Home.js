@@ -19,6 +19,9 @@ export default function Home() {
         <Link to="/register"> 
           <button className="button">Register Interest</button>
         </Link>
+        <Link to="/conduct"> 
+          <button className="button">Code of Conduct</button>
+        </Link>
         <a href="https://www.facebook.com/lark.in.ennis/" target="_blank" rel="noreferrer">
           <button className="button">Join Our Facebook</button>
         </a>
