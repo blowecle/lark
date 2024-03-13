@@ -10,6 +10,7 @@ export default function Artists() {
 
   return (
     <section className="artists-container">
+      <div className="artists-header">INSTRUCTORS</div>
         {artists ? (artists.artists.map((artist, index) => {
             return (
             <Link to={`/artists/${artist.id}`} key={index}>

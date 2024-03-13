@@ -7,25 +7,46 @@ export default function Home() {
   
   return (
     <section className='container'>
-      <div className="blurb-container">
-        <p className="blurb">
-        “Lark in Ennis aims to be the premier adult summer music camp in Ireland for intermediate adult players of Irish Traditional Music. For this first year we're running it as a proof of concept and keeping enrollment and classes very small so instructors have lots of time to advise students on their best path forward to improving and refining their approach to playing. Additional support will come from a nightly session trail tailored to intermediate skill levels and a lunchtime series of talks about aspects of playing Traditional Irish Music. An Instructor Concert as well as daily “secret concerts” will further expose attendees to the best of Irish Traditional Music.
-        </p>
+      <div className="title-container">
+        <img src="https://res.cloudinary.com/dyjzfdguj/image/upload/v1706987644/lark/logo_v52gof.png" alt="" className="title"/>
+        <div className="title-image-container">
+          <img src="https://res.cloudinary.com/dyjzfdguj/image/upload/v1710267488/lark/IMG_2470_pzs7iz.jpg" className="title-image"/>
+          <div className="title-overlay"/>
+        </div>
+        <div className="title-text">IRELAND'S PREMIER ADULT MUSIC CAMP</div>
       </div>
-      <div className="button-container">
-        <Link to="/artists">
-          <button className="button">Meet the Instructors</button>
-        </Link>
-        <Link to="/register"> 
-          <button className="button">Register Interest</button>
-        </Link>
-        <Link to="/conduct"> 
-          <button className="button">Code of Conduct</button>
-        </Link>
-        <a href="https://www.facebook.com/lark.in.ennis/" target="_blank" rel="noreferrer">
-          <button className="button">Join Our Facebook</button>
-        </a>
+      <div className="main-navigation">
+        <div className="main-navigation-container">
+          <div className="main-navigation-title">SIGN UP</div>
+          <div className="main-navigation-blurb">Be one of the first to sign<br/>up while spots are available.</div>
+          <Link to="/register">
+            <button className="main-navigation-button">Register</button>
+          </Link>
+        </div>
+        <div className="main-navigation-container">
+          <div className="main-navigation-title">MEET THE<br/>INSTRUCTORS</div>
+          <div className="main-navigation-blurb">Check out the instructors who will guide you on your musical journey.</div>
+          <Link to="/artists">
+            <button className="main-navigation-button">The Team</button>
+          </Link>
+        </div>
+        <div className="main-navigation-container">
+          <div className="main-navigation-title">CAMP INFO</div>
+          <div className="main-navigation-blurb">Find information about the camp,<br/>venue, dates, and events.</div>
+          <Link to="/FAQ">
+            <button className="main-navigation-button">Information</button>
+          </Link>
+        </div>
       </div>
+      <div className="lower-blurb-container">
+        <div className="lower-blurb-title">
+          Lark in Ennis aims to be the premier summer camp in Ireland for adult players of traditional Irish music
+        </div>
+        <div className="lower-blurb-text">
+          For the first year we're running Lark as a proof of concept and will be keeping enrollment and classes small enough to give instructors time to advice students on their best path forward.  Additional support will come from a nightly session trail tailored to intermediate skill levels and a lunchtime series of talks about aspects of playing traditional Irish music.  An instructor concert as well as daily 'secret concerts' will further expose attendees to the best of traditional Irish music.
+        </div>
+      </div>
+      <div className="bottom-div"/>
     </section>
   )
 }

@@ -2,19 +2,28 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     background-color: #1c7e60;
 }
 
 @media screen and (max-width: 599px) {
+    .preview-wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
     .preview-card {
-        margin-top: 20px;
-        margin-bottom: 20px;
-        width: calc(100vw - 40px);
+        width: 80vw;
+        height: 80vw;
+        border-radius: 80%;
+        border: solid 10px #dbaa74;
+        overflow: hidden;
     }
     
     .artist-preview-image {
-        width: 90%;
+        height: 100vw;
+        width: auto;
         margin-top: 20px;
     }
 
@@ -26,12 +35,18 @@
         width: 60%;
     }
 
-    .artist-preview-name{
-        margin-top: 20px;
-        margin-bottom: 20px;
+    .artist-preview-name, .artist-preview-instrument{
         font-family: LarkFont;
         font-size: 1.5rem;
-        color: white;
+        color: #1c7e60;
+    }
+
+    .artist-preview-name{
+        margin-top: 20px;
+    }
+
+    .artist-preview-instrument{
+        margin-bottom: 20px;
     }
 }
 

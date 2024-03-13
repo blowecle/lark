@@ -4,45 +4,33 @@ import { Link } from 'react-router-dom'
 
 export default function Nav() {
 
-  // const [visible, setVisible] = useState(false)
-  // const logo = require('../images/logo.pdf')
+  const logo = require('../images/logo.pdf');
 
-  // useEffect(() => {
-  //   console.log('visible is now ' + visible)
-  //   const nav = document.querySelector('.nav')
+  const [isOpen, setIsOpen] = useState(false);
+  const [active, setActive] = useState(false);
 
-  //   if (visible) {
-  //     nav.classList.add('visible')
-  //     nav.classList.remove('hidden')
-  //   } else {
-  //     nav.classList.remove('visible')
-  //     nav.classList.add('hidden')
-  //   }
-  // }, [visible]);
-
-  // function setVisibility() {
-  //   console.log('clicked, visible = ' + visible)
-  //   setVisible(!visible)
-  // }
+  const toggleDropdown = () => {
+    setIsOpen(!isOpen);
+    setActive(!active);
+  }
 
   return (
-        <header className="header">
-            {/* <img src="https://cdn.icon-icons.com/icons2/3298/PNG/512/ui_menu_icon_208807.png" className="icon" onClick={setVisibility}/> */}
-            <Link className="logo-wrapper" to="/">
-              <img src="https://res.cloudinary.com/dyjzfdguj/image/upload/v1706987644/lark/logo_v52gof.png" alt="" className="logo"/>
-            </Link>
-            {/* <div className="desktop-nav">
-                <div className="desktop-link">Home</div>
-                <div className="desktop-link">About</div>
-                <div className="desktop-link">Contact</div>
+        <section className="nav-container">
+          <header className="header">
+              <Link className="logo-wrapper" to="/">
+                <img src="https://res.cloudinary.com/dyjzfdguj/image/upload/v1706987644/lark/logo_v52gof.png" alt="" className="logo"/>
+              </Link>
+              <div className="menu-icon" onClick={toggleDropdown}>
+                {!isOpen ? <i className="fas fa-bars"></i> : <i className="fas fa-times"></i>}
+              </div>
+          </header>
+          <nav className="nav">
+            <div className={isOpen ? "dropdown visible" : "dropdown invisible"}>
+              <Link to="/register" className={!active ? "nav-link inactive" : "nav-link active"} onClick={toggleDropdown}>Sign Up</Link>
+              <Link to="/artists" className={!active ? "nav-link inactive" : "nav-link active"} onClick={toggleDropdown}>Meet the Instructors</Link>
+              <Link to="/FAQ" className={!active ? "nav-link inactive" : "nav-link active"} onClick={toggleDropdown}>Info</Link>
             </div>
-            <nav className="nav">
-            <div className="nav-links">
-                <div className="nav-link">About</div>
-                <div className="nav-link">Meet the Musicians</div>
-                <div className="nav-link">Register Interest</div>
-            </div>
-            </nav> */}
-        </header>
+          </nav>
+        </section>
   )
 }

@@ -3,52 +3,54 @@
     padding-bottom: 20px;
 }
 
-.artist-description{
-    text-align: center;
-}
-
-.artist-card {
-    background: linear-gradient(
-        rgba(0, 0, 0, 0.5), /* Adjust the alpha for darkness */
-        rgba(0, 0, 0, 0.5)
-          ), url('https://i.pinimg.com/originals/59/4e/4d/594e4d065a19d61dff205e6216351899.jpg');
-}
-
 a{
     text-decoration: none;
 }
 
-@media screen and (max-width: 599px) {
-    .artist-card {
-        width: 100vw;
-        margin-top: 120px;
+@media screen and (max-width: 375px) {
+    .artist-card-header{
+        margin-top: 100px;
+        height: 200px;
         display: flex;
-        flex-direction: column;
+        background-color: #dbaa74;
         align-items: center;
-        justify-content: center;
-        background-size: 100% 100%;
     }
 
-    .artist-image {
-        width: 90%;
-        margin-top: 20px;
+    .artist-card-header-image{
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        height: 150px;
+        width: 150px;
+        border: solid 5px #18371f;
     }
-    
-    .artist-description{
-        width: calc(100vw - 40px);
+
+    .artist-header-image{
+        height: 100%;
+        width: auto;
+    }
+
+    .artist-card-header-name{
         font-family: LarkFont;
-        color: white;
+        font-size: 1.5rem;
+        color: #18371f;
     }
-    
-    .artist-preview-image {
+
+    .artist-card-header-instrument{
+        font-family: larkFont;
+        font-size: 1.2rem;
+        color: #18371f;
+    }
+
+    .artist-card-description{
+        font-family: larkFont;
+        color: #18371f;
+        font-size: 1.2rem;
         width: 90%;
-        margin-top: 20px;
-    }
-    .artist-info{
-        width: calc(100vw - 40px);
-        font-family: LarkFont;
-        color: white;
-        margin-bottom: 20px;
+        margin-top: 60px;
+        margin-bottom: 60px;
     }
 
     .youtube-embed{
@@ -58,6 +60,10 @@ a{
     .youtube{
         width: 100%;
     }
+}
+
+@media screen and (min-width: 376px) and (max-width: 599px){
+
 }
 
 @media screen and (min-width: 600px) and (max-width: 899px) {
@@ -83,11 +89,7 @@ a{
         line-height: 1.5;
         font-size: 1.5rem;
     }
-    
-    .artist-preview-image {
-        width: 90%;
-        margin-top: 20px;
-    }
+
     .artist-info{
         width: calc(100vw - 40px);
         font-family: LarkFont;
@@ -128,10 +130,6 @@ a{
         font-size: 1.5rem;
     }
     
-    .artist-preview-image {
-        width: 90%;
-        margin-top: 20px;
-    }
     .artist-info{
         width: calc(100vw - 40px);
         font-family: LarkFont;
@@ -173,10 +171,7 @@ a{
         font-size: 1.5rem;
     }
     
-    .artist-preview-image {
-        width: 90%;
-        margin-top: 20px;
-    }
+    
     .artist-info{
         width: calc(100vw - 40px);
         font-family: LarkFont;

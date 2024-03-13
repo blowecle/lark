@@ -1,9 +1,31 @@
+@font-face {
+    font-family: "LarkFont";
+    src: url("https://db.onlinewebfonts.com/t/b4b59e48a26b72516b21a92326426229.eot");
+    src: url("https://db.onlinewebfonts.com/t/b4b59e48a26b72516b21a92326426229.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/b4b59e48a26b72516b21a92326426229.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/b4b59e48a26b72516b21a92326426229.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/b4b59e48a26b72516b21a92326426229.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/b4b59e48a26b72516b21a92326426229.svg#Linotype Projekt Regular")format("svg");
+}
+
 @media screen and (max-width: 599px){
     .artists-container{
         display: flex;
         flex-direction: column;
         width: 100vw;
         margin-top: 100px;
+    }
+
+    .artists-header{
+        font-size: 1.5rem;
+        color: #18371f;
+        background-color: #dbaa74;
+        font-family: larkFont;
+        height: 60px;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        padding-left: 20px;
     }
 }
 
