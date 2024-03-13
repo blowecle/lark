@@ -138,8 +138,8 @@
 
     .active {
         opacity: 1;
-        transition: opacity .5s ease;
-        transition-delay: .5s;
+        transition: opacity 1s ease;
+        transition-delay: .3s;
     }
 
     .nav-link {
