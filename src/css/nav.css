@@ -51,7 +51,24 @@
         width: 100%;
         height: 100%;
         align-items: center;
+        justify-content: space-between;
         z-index: 4;
+    }
+
+    .menu-icon{
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        right: 0;
+        margin-right: 20px;
+    }
+
+    .nav-icon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
     }
 
     .dropdown {
@@ -104,40 +121,6 @@
         align-self: center;
         height: 80%;
         width: auto;
-    }
-
-    .lower-blurb-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin-top: 80px;
-    }
-
-    .lower-blurb-title{
-        font-family: larkFont;
-        color: #18371f;
-        font-size: 1.8rem;
-        text-align: center;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-
-    .lower-blurb-text{
-        font-family: larkFont;
-        color: #18371f;
-        font-size: 1.2rem;
-        text-align: center;
-        padding-left: 10px;
-        padding-right: 10px;
-        margin-top: 80px;
-    }
-
-    .bottom-div{
-        background-color: #18371f;
-        height: 100px;
-        width: 100vw;
-        margin-top: 80px;
     }
 }
 

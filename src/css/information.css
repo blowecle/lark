@@ -1,0 +1,79 @@
+.faq-header{
+    font-family: larkFont;
+    color: #18371f;
+}
+
+@media screen and (max-width: 599px) {
+    .faq-header{
+        font-size: 1.8rem;
+        background-color: #dbaa74;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        padding-left: 5%;
+    }
+
+    .faq-container{
+        margin-top: 100px;
+        width: 100%;
+    }
+
+    .info-container{
+        width: 100%;
+        margin-top: 10px;
+    }    
+
+    .info-item{
+        width: 90%;
+        color: #18371f;
+        font-family: larkFont;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    .item-header{
+        font-size: 1.5rem;
+    }
+
+    .item-content{
+        font-size: 1.2rem;
+    }
+
+    .disclaimer{
+        font-size: 1rem;
+        font-family: larkFont;
+        color: #18371f;
+        margin-bottom: 60px;
+        width: 90%;
+        border-bottom: 3px solid #18371f;
+        padding-bottom: 5px;
+    }
+
+    .sign-up-button{
+        background-color: #18371f;
+        color: white;
+        font-family: larkFont;
+        font-size: 1rem;
+        padding: 10px;
+        margin-top: 20px;
+        border: none;
+        border-radius: 5px;
+        margin-left: 5%;
+    }
+}
+
+@media screen and (min-width: 376px) and (max-width: 599px){
+
+}
+
+@media screen and (min-width: 600px) and (max-width: 899px) {
+
+}
+
+@media screen and (min-width: 900px) and (max-width: 1199px) {
+
+}
+
+@media screen and (min-width: 1200px){
+
+}

@@ -33,7 +33,7 @@ export default function Home() {
         <div className="main-navigation-container">
           <div className="main-navigation-title">CAMP INFO</div>
           <div className="main-navigation-blurb">Find information about the camp,<br/>venue, dates, and events.</div>
-          <Link to="/FAQ">
+          <Link to="/information">
             <button className="main-navigation-button">Information</button>
           </Link>
         </div>

@@ -19,6 +19,7 @@ export default function Artists() {
             )
         })) : null
         }
+        <div className="bottom-div"/>
     </section>
   )
 }

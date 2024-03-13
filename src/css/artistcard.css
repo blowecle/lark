@@ -7,7 +7,7 @@ a{
     text-decoration: none;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 599px) {
     .artist-card-header{
         margin-top: 100px;
         height: 200px;
@@ -47,7 +47,7 @@ a{
     .artist-card-description{
         font-family: larkFont;
         color: #18371f;
-        font-size: 1.2rem;
+        font-size: .8rem;
         width: 90%;
         margin-top: 60px;
         margin-bottom: 60px;

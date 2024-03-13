@@ -1,0 +1,21 @@
+a {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 599px){
+    .faq-question{
+        font-family: larkFont;
+        color: #18371f;
+        width: 90%;
+        margin-top: 20px;
+    }
+
+    .faq-question-header{
+        font-size: 1.5rem;
+        margin-bottom: 5px;
+    }
+
+    .faq-question-answer{
+        font-size: .7rem;
+    }
+}
