@@ -1,3 +1,44 @@
+@font-face {
+    font-family: 'Oseberg';
+    src: url('../assets/Oseberg.ttf') format('truetype');
+}
+
+.flip-container {
+    perspective: 1000px;
+  }
+  
+  .flipper {
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .flipper-image{
+    height: 100%;
+    width: 100%;
+  }
+  
+  .flipped {
+    transform: rotateX(180deg);
+  }
+  
+  .front, .back {
+    backface-visibility: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+  
+  .back {
+    transform: rotateX(180deg);
+  }
+
 .logo-wrapper{
     display: flex;
     align-items: center;
@@ -29,12 +70,11 @@
     font-family: larkFont;
 }
 
+.desktop-icon{
+    font-family: Oseberg;
+}
 
-@media (min-width: 300px) and (max-width: 599px) {
-    .desktop-nav{
-        display: none;
-    }
-    
+@media (min-width: 300px) and (max-width: 375px) {
     .icon{
         width: 60px;
         height: 60px;
@@ -56,8 +96,8 @@
     }
 
     .menu-icon{
-        width: 60px;
-        height: 60px;
+        width: 30px;
+        height: 30px;
         position: absolute;
         right: 0;
         margin-right: 20px;
@@ -117,74 +157,303 @@
     .logo {
         position: absolute;
         left: 0;
-        margin-left: 10px;
+        margin-left: 5vw;
         align-self: center;
         height: 80%;
         width: auto;
     }
-}
 
-@media (min-width: 600px) and (max-width: 899px) {
-    /* Styles for screens between 600px and 899px */
-    .header {
-        width: 100vw;
-        height: 120px; /* Adjust the height as needed */
-    }
-    
-    .logo {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        align-self: center;
-        height: 80%;
-        width: auto; /* Set width to auto */
+    .desktop-icon{
+        display: none;
     }
 }
 
-@media (min-width: 900px) and (max-width: 1199px) {
-    /* Styles for screens between 900px and 1199px */
-    .header {
-        width: 100vw;
-        height: 140px; /* Adjust the height as needed */
+@media screen and (min-width: 376px) and (max-width: 599px){
+    .icon{
+        width: 60px;
+        height: 60px;
+        color: white;
     }
-    
-    .logo {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        align-self: center;
-        height: 80%;
-        width: auto; /* Set width to auto */
-    }
-}
 
-@media (min-width: 1200px) and (max-width: 1399px) {
-    /* Styles for screens between 1200px and 1399px */
-    .header {
+    .nav-container{
         width: 100vw;
-        height: 160px; /* Adjust the height as needed */
+        height: 100px;
+        z-index: 2;
     }
-    
-    .logo {
-        display: flex;
+
+    .header {
+        width: 100%;
+        height: 100%;
         align-items: center;
-        height: 90%;
+        justify-content: space-between;
+        z-index: 4;
+    }
+
+    .menu-icon{
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        right: 0;
+        margin-right: 20px;
+    }
+
+    .nav-icon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .dropdown {
+        margin-top: 100px;
+        position: absolute;
+        transition: top 1s ease;
+        height: calc(100vh - 100px);
+        width: 100vw;
+        background-color: #dbaa74;
+        color: #18371f;
+        z-index: 3;
+    }
+
+    .invisible {
+        top: -100vh;
+    }
+
+    .visible {
+        top: 0;
+    }
+
+    .inactive {
+        opacity: 0;
+        transition: opacity 1s ease;
+        transition-delay: 1s;
+    }
+
+    .active {
+        opacity: 1;
+        transition: opacity .8s ease;
+        transition-delay: 1s;
+    }
+
+    .nav-link {
+        text-decoration: none;
+        color: #18371f;
+        margin-top: 40px;
+    }
+    
+    .icon {
+        position: absolute;
+        right: 0;
+        margin-right: 10px;
+    }
+
+    .logo {
+        position: absolute;
+        left: 0;
+        margin-left: 5vw;
+        align-self: center;
+        height: 80%;
         width: auto;
+    }
+
+    .desktop-icon{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 899px) {
+    .icon{
+        width: 60px;
+        height: 60px;
+        color: white;
+    }
+
+    .nav-container{
+        width: 100vw;
+        height: 100px;
+        z-index: 2;
+    }
+
+    .header {
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 4;
+    }
+
+    .nav, .menu-icon{
+        display: none;
+    }
+
+    .logo-wrapper{
+        height: 100%;
+    }
+    
+    .logo {
+        height: 80%;
+        width: auto; 
+        margin-left: 5vw;
+    }
+
+    .desktop-icon{
+        color:#dbaa74;
+        font-size: 1.6rem;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1199px) {
+    .icon{
+        width: 60px;
+        height: 60px;
+        color: white;
+    }
+
+    .nav-container{
+        width: 100vw;
+        height: 100px;
+        z-index: 2;
+    }
+
+    .header {
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: space-evenly;
+        z-index: 4;
+    }
+
+    .nav, .menu-icon{
+        display: none;
+    }
+
+    .logo-wrapper{
+        height: 100%;
+    }
+    
+    .logo {
+        height: 80%;
+        width: auto;
+        margin-left: 5vw;
+    }
+
+    .desktop-wrapper{
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: row;
+        width: 800px;
+        margin-right: 40px;
+    }
+    .desktop-icon{
+        color:#dbaa74;
+        font-size: 1.6rem;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+    .icon{
+        width: 60px;
+        height: 60px;
+        color: white;
+    }
+
+    .nav-container{
+        width: 100vw;
+        height: 100px;
+        z-index: 2;
+    }
+
+    .header {
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: space-evenly;
+        z-index: 4;
+    }
+
+    .nav, .menu-icon{
+        display: none;
+    }
+
+    .logo-wrapper{
+        height: 100%;
+    }
+    
+    .logo {
+        height: 80%;
+        width: auto;
+        margin-left: 5vw;
+    }
+
+    .desktop-wrapper{
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: row;
+        width: 800px;
+        margin-right: 40px;
+    }
+    .desktop-icon{
+        color:#dbaa74;
+        font-size: 1.6rem;
+        margin-left: 15px;
+        margin-right: 15px;
     }
 }
 
 /* Styles for screens larger than 1400px */
-@media (min-width: 1400px) {
-    .header {
+@media screen and (min-width: 1400px) {
+    .icon{
+        width: 60px;
+        height: 60px;
+        color: white;
+    }
+
+    .nav-container{
         width: 100vw;
-        height: 180px; /* Adjust the height as needed */
+        height: 100px;
+        z-index: 2;
+    }
+
+    .header {
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: space-evenly;
+        z-index: 4;
+    }
+
+    .nav, .menu-icon{
+        display: none;
+    }
+
+    .logo-wrapper{
+        height: 100%;
+        width: 50%;
     }
     
     .logo {
-        align-items: center;
         height: 80%;
         width: auto;
+        margin-left: 5vw;
+    }
+
+    .desktop-wrapper{
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: row;
+        width: 800px;
+        margin-right: 40px;
+    }
+
+    .desktop-icon{
+        color:#dbaa74;
+        font-size: 1.6rem;
+        margin-left: 15px;
+        margin-right: 15px;
     }
 }

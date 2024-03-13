@@ -8,32 +8,32 @@ export default function Home() {
   return (
     <section className='container'>
       <div className="title-container">
-        <img src="https://res.cloudinary.com/dyjzfdguj/image/upload/v1706987644/lark/logo_v52gof.png" alt="" className="title"/>
+        <img src="https://res.cloudinary.com/dyjzfdguj/image/upload/v1710363470/lark/Lark_in_Ennis_gold_fssxkj.png" alt="" className="main-title"/>
         <div className="title-image-container">
           <img src="https://res.cloudinary.com/dyjzfdguj/image/upload/v1710267488/lark/IMG_2470_pzs7iz.jpg" className="title-image"/>
           <div className="title-overlay"/>
-        </div>
         <div className="title-text">IRELAND'S PREMIER ADULT MUSIC CAMP</div>
+        </div>
       </div>
       <div className="main-navigation">
         <div className="main-navigation-container">
           <div className="main-navigation-title">SIGN UP</div>
           <div className="main-navigation-blurb">Be one of the first to sign<br/>up while spots are available.</div>
-          <Link to="/register">
+          <Link className="main-button-wrapper" to="/register">
             <button className="main-navigation-button">Register</button>
           </Link>
         </div>
         <div className="main-navigation-container">
           <div className="main-navigation-title">MEET THE<br/>INSTRUCTORS</div>
           <div className="main-navigation-blurb">Check out the instructors who will guide you on your musical journey.</div>
-          <Link to="/artists">
+          <Link className="main-button-wrapper" to="/artists">
             <button className="main-navigation-button">The Team</button>
           </Link>
         </div>
         <div className="main-navigation-container">
           <div className="main-navigation-title">CAMP INFO</div>
           <div className="main-navigation-blurb">Find information about the camp,<br/>venue, dates, and events.</div>
-          <Link to="/information">
+          <Link className="main-button-wrapper" to="/information">
             <button className="main-navigation-button">Information</button>
           </Link>
         </div>

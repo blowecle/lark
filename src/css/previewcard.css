@@ -51,26 +51,32 @@
 }
 
 @media screen and (min-width: 600px) and (max-width: 899px) {
-    .artists-container{
+    .preview-wrapper{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-bottom: 40px;
+    }
+
+    .artists-wrapper{
+        display: flex;
         flex-wrap: wrap;
-        margin-top: 120px;
     }
 
     .preview-card {
-        margin-top: 20px;
-        margin-bottom: 20px;
-        width: calc(50vw - 100px);
-        height: 90%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        width: 30vw;
+        height: 30vw;
+        border-radius: 80%;
+        border: solid 10px #dbaa74;
+        overflow: hidden;
     }
     
     .artist-preview-image {
-        width: 90%;
-        max-height: 90%;
+        height: 30vw;
+        width: auto;
         margin-top: 20px;
     }
 
@@ -82,36 +88,48 @@
         width: 60%;
     }
 
-    .artist-preview-name{
-        margin-top: 20px;
-        margin-bottom: 20px;
+    .artist-preview-name, .artist-preview-instrument{
         font-family: LarkFont;
         font-size: 1.5rem;
-        color: white;
+        color: #1c7e60;
+    }
+
+    .artist-preview-name{
+        margin-top: 20px;
+    }
+
+    .artist-preview-instrument{
+        margin-bottom: 20px;
     }
 }
 
 @media screen and (min-width: 900px) and (max-width: 1199px) {
-    .artists-container{
+    .preview-wrapper{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-bottom: 40px;
+    }
+
+    .artists-wrapper{
+        display: flex;
         flex-wrap: wrap;
-        margin-top: 140px;
     }
 
     .preview-card {
-        margin-top: 20px;
-        margin-bottom: 20px;
-        width: calc(40vw - 100px);
-        height: 90%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        width: 30vw;
+        height: 30vw;
+        border-radius: 80%;
+        border: solid 10px #dbaa74;
+        overflow: hidden;
     }
     
     .artist-preview-image {
-        width: 90%;
-        max-height: 90%;
+        height: 30vw;
+        width: auto;
         margin-top: 20px;
     }
 
@@ -123,36 +141,48 @@
         width: 60%;
     }
 
-    .artist-preview-name{
-        margin-top: 20px;
-        margin-bottom: 20px;
+    .artist-preview-name, .artist-preview-instrument{
         font-family: LarkFont;
         font-size: 1.5rem;
-        color: white;
+        color: #1c7e60;
+    }
+
+    .artist-preview-name{
+        margin-top: 20px;
+    }
+
+    .artist-preview-instrument{
+        margin-bottom: 20px;
     }
 }
 
 @media screen and (min-width: 900px) and (max-width: 1199px) {
-    .artists-container{
+    .preview-wrapper{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-bottom: 40px;
+    }
+
+    .artists-wrapper{
+        display: flex;
         flex-wrap: wrap;
-        margin-top: 140px;
     }
 
     .preview-card {
-        margin-top: 20px;
-        margin-bottom: 20px;
-        width: calc(40vw - 100px);
-        height: 90%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        width: 30vw;
+        height: 30vw;
+        border-radius: 80%;
+        border: solid 10px #dbaa74;
+        overflow: hidden;
     }
     
     .artist-preview-image {
-        max-width: 90%;
-        max-height: 90%;
+        height: 30vw;
+        width: auto;
         margin-top: 20px;
     }
 
@@ -164,12 +194,18 @@
         width: 60%;
     }
 
-    .artist-preview-name{
-        margin-top: 20px;
-        margin-bottom: 20px;
+    .artist-preview-name, .artist-preview-instrument{
         font-family: LarkFont;
         font-size: 1.5rem;
-        color: white;
+        color: #1c7e60;
+    }
+
+    .artist-preview-name{
+        margin-top: 20px;
+    }
+
+    .artist-preview-instrument{
+        margin-bottom: 20px;
     }
 }
 
@@ -178,7 +214,6 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        margin-top: 180px;
     }
 
     .preview-card {
@@ -190,12 +225,6 @@
         flex-direction: column;
         justify-content: space-between;
     }
-    
-    .artist-preview-image {
-        max-width: 90%;
-        max-height: 80%;
-        margin-top: 20px;
-    }
 
     .single-preview-card{
         display: flex;
@@ -211,5 +240,162 @@
         font-family: LarkFont;
         font-size: 1.5rem;
         color: white;
+    }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1199px) {
+    .preview-wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-bottom: 40px;
+    }
+
+    .artists-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .preview-card {
+        width: 30vw;
+        height: 30vw;
+        border-radius: 80%;
+        border: solid 10px #dbaa74;
+        overflow: hidden;
+    }
+    
+    .artist-preview-image {
+        height: 30vw;
+        width: auto;
+        margin-top: 20px;
+    }
+
+    .single-preview-card{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 60%;
+    }
+
+    .artist-preview-name, .artist-preview-instrument{
+        font-family: LarkFont;
+        font-size: 1.5rem;
+        color: #1c7e60;
+    }
+
+    .artist-preview-name{
+        margin-top: 20px;
+    }
+
+    .artist-preview-instrument{
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+    .preview-wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-bottom: 40px;
+    }
+
+    .artists-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .preview-card {
+        width: 30vw;
+        height: 30vw;
+        border-radius: 80%;
+        border: solid 10px #dbaa74;
+        overflow: hidden;
+    }
+    
+    .artist-preview-image {
+        height: 30vw;
+        width: auto;
+    }
+
+    .single-preview-card{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 60%;
+    }
+
+    .artist-preview-name, .artist-preview-instrument{
+        font-family: LarkFont;
+        font-size: 1.5rem;
+        color: #1c7e60;
+    }
+
+    .artist-preview-name{
+        margin-top: 20px;
+    }
+
+    .artist-preview-instrument{
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 1400px){
+    .preview-wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-bottom: 40px;
+    }
+
+    .artists-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .preview-card {
+        width: 30vw;
+        height: 30vw;
+        border-radius: 80%;
+        border: solid 10px #dbaa74;
+        overflow: hidden;
+    }
+    
+    .artist-preview-image {
+        height: 30vw;
+        width: auto;
+    }
+
+    .single-preview-card{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 60%;
+    }
+
+    .artist-preview-name, .artist-preview-instrument{
+        font-family: LarkFont;
+        font-size: 1.5rem;
+        color: #1c7e60;
+    }
+
+    .artist-preview-name{
+        margin-top: 20px;
+    }
+
+    .artist-preview-instrument{
+        margin-bottom: 20px;
     }
 }

@@ -25,17 +25,17 @@
 
 @font-face {
     font-family: "LarkFont";
-    src: url("https://db.onlinewebfonts.com/t/b4b59e48a26b72516b21a92326426229.eot");
-    src: url("https://db.onlinewebfonts.com/t/b4b59e48a26b72516b21a92326426229.eot?#iefix")format("embedded-opentype"),
-    url("https://db.onlinewebfonts.com/t/b4b59e48a26b72516b21a92326426229.woff2")format("woff2"),
-    url("https://db.onlinewebfonts.com/t/b4b59e48a26b72516b21a92326426229.woff")format("woff"),
-    url("https://db.onlinewebfonts.com/t/b4b59e48a26b72516b21a92326426229.ttf")format("truetype"),
-    url("https://db.onlinewebfonts.com/t/b4b59e48a26b72516b21a92326426229.svg#Linotype Projekt Regular")format("svg");
+    src: url('../assets/LinotypeProjektRegular.ttf')
 }
 
 @font-face {
     font-family: larkFontBold;
-    src: url('../../public/LinotypeProjektBold.ttf');
+    src: url('../assets/LinotypeProjektBold.ttf');
+}
+
+@font-face {
+    font-family: oseberg;
+    src: url('../assets/Oseberg.ttf');
 }
 
 .container {
@@ -54,11 +54,11 @@
     position: relative;
 }
 
-.title, .title-text, .title-image {
+.main-title, .title-text, .title-image {
     position: absolute;
 }
 
-.title, .title-text{
+.main-title, .title-text{
     z-index: 3;
     font-family: larkFont;
     color: white;
@@ -69,6 +69,9 @@
 }
 
 @media screen and (max-width: 375px) {
+    .title-text{
+        text-align: center;
+    }
     .title-container {
         height: 400px;
         overflow: hidden;
@@ -96,10 +99,10 @@
         left: -115px;
     }
 
-    .title{
+    .main-title{
         height: 150px;
         width: auto;
-        top: 0px;
+        top: 20px;
         left: 50%;
         transform: translate(-50%, 0);
     }
@@ -148,8 +151,11 @@
         color: white;
         font-family: larkFont;
         font-style: italic;
-        height: 30px;
-        width: 100px;
+        height: 40px;
+        min-width: 120px;
+        padding: 5px;
+        border: none;
+        text-align: center;
         font-size: 1.2rem;
         text-align: center;
     }
@@ -190,6 +196,10 @@
 }
 
 @media screen and (min-width: 376px) and (max-width: 449px) {
+    .title-text{
+        text-align: center;
+    }
+    
     .title-container {
         height: 400px;
         overflow: hidden;
@@ -217,10 +227,10 @@
         left: -115px;
     }
 
-    .title{
+    .main-title{
         height: 150px;
         width: auto;
-        top: 0px;
+        top: 20px;
         left: 50%;
         transform: translate(-50%, 0);
     }
@@ -262,15 +272,21 @@
         margin-top: 60px;
     }
 
-    .main-navigation-button{
+    .main-button-wrapper{
         margin-top: 60px;
-        margin-bottom: 60px;
+        margin-bottom: 60px
+    }
+    
+    .main-navigation-button{
         background-color: #18371f;
         color: white;
         font-family: larkFont;
         font-style: italic;
-        height: 30px;
-        width: 100px;
+        height: 40px;
+        min-width: 120px;
+        padding: 5px;
+        border: none;
+        text-align: center;
         font-size: 1.2rem;
         text-align: center;
     }
@@ -312,6 +328,10 @@
 }
 
 @media screen and (min-width: 450px) and (max-width: 599px) {
+    .title-text{
+        text-align: center;
+    }
+
     .title-container {
         height: 400px;
         overflow: hidden;
@@ -339,10 +359,10 @@
         left: -115px;
     }
 
-    .title{
+    .main-title{
         height: 150px;
         width: auto;
-        top: 0px;
+        top: 20px;
         left: 50%;
         transform: translate(-50%, 0);
     }
@@ -351,7 +371,8 @@
         top: 170px;
         left: 50%;
         transform: translate(-50%, 0);
-        font-size: 1.2rem;
+        font-size: 1.4rem;
+        width: 205px;
     }
 
     .main-navigation{
@@ -384,15 +405,21 @@
         margin-top: 60px;
     }
 
-    .main-navigation-button{
+    .main-button-wrapper{
         margin-top: 60px;
-        margin-bottom: 60px;
+        margin-bottom: 60px
+    }
+
+    .main-navigation-button{
         background-color: #18371f;
         color: white;
         font-family: larkFont;
         font-style: italic;
-        height: 30px;
-        width: 100px;
+        height: 40px;
+        min-width: 120px;
+        padding: 5px;
+        border: none;
+        text-align: center;
         font-size: 1.2rem;
         text-align: center;
     }
@@ -434,188 +461,524 @@
 }
 
 @media screen and (min-width: 600px) and (max-width: 899px) {
-
-    .container {
-        margin-top: 120px;
+    .title-container {
+        height: 600px;
+        overflow: hidden;
+        margin-top: 100px;
     }
 
-    .blurb-container {
-        height: 500px;
-        display: flex;
-        align-items: center;
+    .title-image-container {
+        position: relative;
+    }
+    
+    .title-overlay{
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.3);
     }
 
-    .blurb {
-        text-align: center;
-        color: white;
-        font-size: 1.4rem;
-        line-height: 1.5;
-        padding-left: 30px;
-        padding-right: 30px;
-        font-family: LarkFont;
+    .title-image{
+        height: 800px;
+        width: auto;
+        top: -10px;
+        left: -15px;
     }
 
-    .button-container{
+    .main-title{
+        height: auto;
+        width: 300px;
+        top: 30px;
+        left: 250px;
+        transform: translate(-50%, 0);
+    }
+
+    .title-text{
+        top: 170px;
+        left: 242px;
+        transform: translate(-50%, 0);
+        font-size: 1.2rem;
+        width: 275px;
+        padding-left: 40px;
+    }
+
+    .main-navigation{
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
-        height: 200px;
-        margin-top: 50px;
-        margin-bottom: 50px;
     }
 
-    .button {
-        padding: 10px 20px;
-        font-size: 1.5rem;
-        font-family: LarkFont;
-        border-radius: 20px;
-        height: 50px;
-        width: 250px;
-        margin: 10px;
+    .main-navigation-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 60%;
+        border-bottom: #18371f solid 2px;
     }
-}
 
-@media screen and (min-width: 750px) and (max-width: 899px) {
-    .blurb {
-        padding-left: 100px;
-        padding-right: 100px;
+    .main-navigation-title{
+        font-family: larkFont;
+        color: #18371f;
+        font-size: 2rem;
+        margin-top: 60px;
+        text-align: center;
+    }
+
+    .main-navigation-blurb{
+        font-family: larkFont;
+        color: #18371f;
+        text-align: center;
+        font-size: .9rem;
+        margin-top: 60px;
+    }
+
+    .main-button-wrapper{
+        margin-top: 60px;
+        margin-bottom: 60px
+    }
+
+    .main-navigation-button{
+        background-color: #18371f;
+        color: white;
+        font-family: larkFont;
+        font-style: italic;
+        height: 40px;
+        min-width: 120px;
+        padding: 5px;
+        border: none;
+        text-align: center;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .lower-blurb-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 80px;
+        width: 80%;
+    }
+
+    .lower-blurb-title{
+        font-family: larkFont;
+        color: #18371f;
+        font-size: 1.8rem;
+        text-align: center;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .lower-blurb-text{
+        font-family: larkFont;
+        color: #18371f;
+        font-size: 1.2rem;
+        text-align: center;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-top: 80px;
+    }
+
+    .bottom-div{
+        background-color: #18371f;
+        height: 100px;
+        width: 100vw;
+        margin-top: 80px;
     }
 }
 
 @media screen and (min-width: 900px) and (max-width: 1199px) {
-
-    .container {
-        margin-top: 140px;
+    .title-container {
+        height: 600px;
+        overflow: hidden;
+        margin-top: 100px;
     }
 
-    .blurb-container {
-        height: 700px;
-        display: flex;
-        align-items: center;
+    .title-image-container {
+        position: relative;
+    }
+    
+    .title-overlay{
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.3);
     }
 
-    .blurb {
-        text-align: center;
-        color: white;
-        font-size: 1.6rem;
-        line-height: 2;
-        padding-left: 30px;
-        padding-right: 30px;
-        font-family: LarkFont;
-        padding-left: 100px;
-        padding-right: 100px;
+    .title-image{
+        height: 912px;
+        width: auto;
+        top: -80px;
+        left: -15px 
     }
 
-    .button-container{
+    .main-title{
+        height: auto;
+        width: 300px;
+        top: 30px;
+        left: 250px;
+        transform: translate(-50%, 0);
+    }
+
+    .title-text{
+        top: 170px;
+        left: 242px;
+        transform: translate(-50%, 0);
+        font-size: 1.5rem;
+        width: 275px;
+        padding-left: 40px;
+    }
+
+    .main-navigation{
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
-        height: 200px;
-        margin-top: 50px;
-        margin-bottom: 50px;
     }
 
-    .button {
-        padding: 10px 20px;
+    .main-navigation-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 60%;
+        border-bottom: #18371f solid 2px;
+    }
+
+    .main-navigation-title{
+        font-family: larkFont;
+        color: #18371f;
+        font-size: 3rem;
+        margin-top: 60px;
+        text-align: center;
+    }
+
+    .main-navigation-blurb{
+        font-family: larkFont;
+        color: #18371f;
+        text-align: center;
         font-size: 1.5rem;
-        font-family: LarkFont;
-        border-radius: 20px;
-        height: 50px;
-        width: 250px;
-        margin: 10px;
+        margin-top: 60px;
+        max-width: 400px;
+    }
+
+    .main-button-wrapper{
+        margin-top: 60px;
+        margin-bottom: 60px
+    }
+
+    .main-navigation-button{
+
+        background-color: #18371f;
+        color: white;
+        font-family: larkFont;
+        font-style: italic;
+        height: 40px;
+        min-width: 120px;
+        padding: 5px;
+        border: none;
+        text-align: center;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .lower-blurb-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 80px;
+        width: 60%;
+    }
+
+    .lower-blurb-title{
+        font-family: larkFont;
+        color: #18371f;
+        font-size: 1.8rem;
+        text-align: center;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .lower-blurb-text{
+        font-family: larkFont;
+        color: #18371f;
+        font-size: 1.2rem;
+        text-align: center;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-top: 80px;
+    }
+
+    .bottom-div{
+        background-color: #18371f;
+        height: 100px;
+        width: 100vw;
+        margin-top: 80px;
     }
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1399px) {
-
-    .container {
-        margin-top: 160px;
+    .title-container {
+        height: 600px;
+        overflow: hidden;
+        margin-top: 100px;
     }
 
-    .blurb-container {
-        height: 700px;
-        display: flex;
-        align-items: center;
+    .title-image-container {
+        position: relative;
+    }
+    
+    .title-overlay{
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.3);
     }
 
-    .blurb {
-        text-align: center;
-        color: white;
-        font-size: 1.9rem;
-        line-height: 2;
-        padding-left: 30px;
-        padding-right: 30px;
-        font-family: LarkFont;
-        padding-left: 150px;
-        padding-right: 150px;
+    .title-image{
+        height: 912px;
+        width: auto;
+        top: -80px;
+        left: -15px 
     }
 
-    .button-container{
+    .main-title{
+        height: auto;
+        width: 300px;
+        top: 30px;
+        left: 250px;
+        transform: translate(-50%, 0);
+    }
+
+    .title-text{
+        top: 170px;
+        left: 242px;
+        transform: translate(-50%, 0);
+        font-size: 1.5rem;
+        width: 275px;
+        padding-left: 40px;
+    }
+
+    .main-navigation{
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
-        height: 200px;
-        margin-top: 50px;
-        margin-bottom: 50px;
     }
 
-    .button {
-        padding: 10px 20px;
+    .main-navigation-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 60%;
+        border-bottom: #18371f solid 2px;
+    }
+
+    .main-navigation-title{
+        font-family: larkFont;
+        color: #18371f;
+        font-size: 3rem;
+        margin-top: 60px;
+        text-align: center;
+    }
+
+    .main-navigation-blurb{
+        font-family: larkFont;
+        color: #18371f;
+        text-align: center;
         font-size: 1.5rem;
-        font-family: LarkFont;
-        border-radius: 20px;
-        height: 50px;
-        width: 250px;
-        margin: 10px;
+        margin-top: 60px;
+        max-width: 400px;
+    }
+
+    .main-button-wrapper{
+        margin-top: 60px;
+        margin-bottom: 60px
+    }
+
+    .main-navigation-button{
+        background-color: #18371f;
+        color: white;
+        font-family: larkFont;
+        font-style: italic;
+        height: 40px;
+        min-width: 120px;
+        padding: 5px;
+        border: none;
+        text-align: center;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .lower-blurb-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 80px;
+        width: 60%;
+    }
+
+    .lower-blurb-title{
+        font-family: larkFont;
+        color: #18371f;
+        font-size: 1.8rem;
+        text-align: center;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .lower-blurb-text{
+        font-family: larkFont;
+        color: #18371f;
+        font-size: 1.2rem;
+        text-align: center;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-top: 80px;
+    }
+
+    .bottom-div{
+        background-color: #18371f;
+        height: 100px;
+        width: 100vw;
+        margin-top: 80px;
     }
 }
 
 @media screen and (min-width: 1400px){
-
-    .container {
-        margin-top: 200px;
+    .title-container {
+        height: 600px;
+        overflow: hidden;
+        margin-top: 100px;
     }
 
-    .blurb-container {
-        height: 650px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 80%;
+    .title-image-container {
+        position: relative;
+    }
+    
+    .title-overlay{
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.3);
     }
 
-    .blurb {
-        text-align: center;
-        color: white;
-        font-size: 1.8rem;
-        line-height: 2;
-        padding-left: 30px;
-        padding-right: 30px;
-        font-family: LarkFont;
-        padding-left: 150px;
-        padding-right: 150px;
+    .title-image{
+        height: 1400px;
+        width: auto;
+        top: -400px;
+        left: -15px 
     }
 
-    .button-container{
+    .main-title{
+        height: auto;
+        width: 300px;
+        top: 30px;
+        left: 250px;
+        transform: translate(-50%, 0);
+    }
+
+    .title-text{
+        top: 170px;
+        left: 242px;
+        transform: translate(-50%, 0);
+        font-size: 1.5rem;
+        width: 275px;
+        padding-left: 40px;
+    }
+
+    .main-navigation{
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
-        height: 200px;
-        margin-top: 50px;
-        margin-bottom: 50px;
     }
 
-    .button {
-        padding: 10px 20px;
+    .main-navigation-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 60%;
+        border-bottom: #18371f solid 2px;
+    }
+
+    .main-navigation-title{
+        font-family: larkFont;
+        color: #18371f;
+        font-size: 3rem;
+        margin-top: 60px;
+        text-align: center;
+    }
+
+    .main-navigation-blurb{
+        font-family: larkFont;
+        color: #18371f;
+        text-align: center;
         font-size: 1.5rem;
-        font-family: LarkFont;
-        border-radius: 20px;
-        height: 50px;
-        width: 250px;
-        margin: 10px;
+        margin-top: 60px;
+        max-width: 400px;
+    }
+
+    .main-button-wrapper{
+        margin-top: 60px;
+        margin-bottom: 60px
+    }
+
+    .main-navigation-button{
+        background-color: #18371f;
+        color: white;
+        font-family: larkFont;
+        font-style: italic;
+        min-width: 120px;
+        padding: 5px;
+        border: none;
+        text-align: center;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .lower-blurb-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 80px;
+        width: 60%;
+    }
+
+    .lower-blurb-title{
+        font-family: larkFont;
+        color: #18371f;
+        font-size: 1.8rem;
+        text-align: center;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .lower-blurb-text{
+        font-family: larkFont;
+        color: #18371f;
+        font-size: 1.2rem;
+        text-align: center;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-top: 80px;
+    }
+
+    .bottom-div{
+        background-color: #18371f;
+        height: 100px;
+        width: 100vw;
+        margin-top: 80px;
     }
 }

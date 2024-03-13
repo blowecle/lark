@@ -11,14 +11,16 @@ export default function Artists() {
   return (
     <section className="artists-container">
       <div className="artists-header">INSTRUCTORS</div>
-        {artists ? (artists.artists.map((artist, index) => {
-            return (
-            <Link to={`/artists/${artist.id}`} key={index}>
-                <PreviewCard key={index} artist={artist} />
-            </Link>
-            )
-        })) : null
-        }
+      <div className="artists-wrapper">
+          {artists ? (artists.artists.map((artist, index) => {
+              return (
+              <Link to={`/artists/${artist.id}`} key={index}>
+                  <PreviewCard key={index} artist={artist} />
+              </Link>
+              )
+          })) : null
+          }
+        </div>
         <div className="bottom-div"/>
     </section>
   )
