@@ -2,6 +2,7 @@ import '../css/information.css';
 import { Link } from 'react-router-dom';
 
 const FAQ = () => {
+    window.scrollTo(0, 0);
   return (
     <section className="faq-container">
         <div className="faq-header">CAMP INFORMATION</div>
