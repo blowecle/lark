@@ -132,13 +132,13 @@
     .inactive {
         opacity: 0;
         transition: opacity 1s ease;
-        transition-delay: .3s;
+        transition-delay: 1s;
     }
 
     .active {
         opacity: 1;
-        transition: opacity 1s ease;
-        transition-delay: .5s;
+        transition: opacity 2s ease;
+        transition-delay: .4s;
     }
 
     .nav-link {
@@ -232,8 +232,8 @@
 
     .active {
         opacity: 1;
-        transition: opacity .8s ease;
-        transition-delay: 1s;
+        transition: opacity 2s ease;
+        transition-delay: .4s;
     }
 
     .nav-link {
