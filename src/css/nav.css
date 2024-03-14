@@ -42,7 +42,6 @@
 .logo-wrapper{
     display: flex;
     align-items: center;
-    justify-content: center;
     background-color: #18371f;
 }
 
@@ -133,13 +132,13 @@
     .inactive {
         opacity: 0;
         transition: opacity 1s ease;
-        transition-delay: 1s;
+        transition-delay: .3s;
     }
 
     .active {
         opacity: 1;
         transition: opacity 1s ease;
-        transition-delay: .3s;
+        transition-delay: .5s;
     }
 
     .nav-link {
@@ -291,12 +290,14 @@
 
     .logo-wrapper{
         height: 100%;
+        display: flex;
+        align-items: flex-start;
+        padding-left: 5vw;
     }
     
     .logo {
         height: 80%;
         width: auto; 
-        margin-left: 5vw;
     }
 
     .desktop-icon{

@@ -17,11 +17,11 @@
     }
 
     .artists-header{
-        font-size: 1.5rem;
+        font-size: 2rem;
         color: #18371f;
         background-color: #dbaa74;
         font-family: larkFont;
-        height: 60px;
+        height: 100px;
         width: 100vw;
         display: flex;
         align-items: center;
