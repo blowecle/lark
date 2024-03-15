@@ -24,7 +24,13 @@ const FAQ = () => {
                 <div className="item-content">A nightly tour hitting pubs all over<br/>Ennis hosting free sessions for<br/>participants.  A great opportunity<br/>to play with others in the wild.<br/>with a famous instructor.</div>
             </div>
             <div className="info-item">
-                <div className="item-header">Refreshments</div>
+                <div className="item-header">Free T-Shirt</div>
+                <div className="item-content">
+                    A free t-shirt to remember theweek by.<br/>Please specify size when registering.
+                </div>
+            </div>
+            <div className="info-item">
+                <div className="item-header">Refreshments*</div>
                 <div className="item-content">Refreshments and light snacks<br/>will be provided at the Hub.<br/>Open during the day.</div>
             </div>
             <div className="info-item">
