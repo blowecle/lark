@@ -168,7 +168,7 @@
     }
 }
 
-@media screen and (min-width: 376px) and (max-width: 599px){
+@media screen and (min-width: 376px) and (max-width: 699px){
     .icon{
         width: 60px;
         height: 60px;
@@ -263,7 +263,7 @@
     }
 }
 
-@media screen and (min-width: 600px) and (max-width: 899px) {
+@media screen and (min-width: 700px) and (max-width: 899px) {
     .icon{
         width: 60px;
         height: 60px;
@@ -291,7 +291,7 @@
     .logo-wrapper{
         height: 100%;
         display: flex;
-        align-items: flex-start;
+        align-items: center;
         padding-left: 5vw;
     }
     
