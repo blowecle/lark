@@ -13,16 +13,6 @@
     cursor: pointer;
   }
 
-  .blurb-container {
-    background:
-    linear-gradient(
-  rgba(0, 0, 0, 0.5), /* Adjust the alpha for darkness */
-  rgba(0, 0, 0, 0.5)
-    ), url("https://www.dreamireland.com/_fileupload/image/lg-1524832364-Ennis_Co_Clare_2.jpg");
-    background-size: cover;
-}
-  
-
 @font-face {
     font-family: "LarkFont";
     src: url('../assets/LinotypeProjektRegular.ttf')
@@ -68,7 +58,17 @@
     z-index: 1;
 }
 
+.dates{
+    font-family: larkFont;
+    color: #18371f;
+}
+
 @media screen and (max-width: 375px) {
+    .dates{
+        margin-top: 20px;
+        font-size: 1rem;
+    }
+
     .title-text{
         text-align: center;
     }
@@ -196,6 +196,11 @@
 }
 
 @media screen and (min-width: 376px) and (max-width: 449px) {
+    .dates{
+        margin-top: 20px;
+        font-size: 1rem;
+    }
+
     .title-text{
         text-align: center;
     }
@@ -328,6 +333,11 @@
 }
 
 @media screen and (min-width: 450px) and (max-width: 599px) {
+    .dates{
+        margin-top: 20px;
+        font-size: 1rem;
+    }
+
     .title-text{
         text-align: center;
     }
@@ -461,6 +471,11 @@
 }
 
 @media screen and (min-width: 600px) and (max-width: 899px) {
+    .dates{
+        margin-top: 20px;
+        font-size: 1rem;
+    }
+
     .title-container {
         height: 600px;
         overflow: hidden;
@@ -591,6 +606,11 @@
 }
 
 @media screen and (min-width: 900px) and (max-width: 1199px) {
+    .dates{
+        margin-top: 20px;
+        font-size: 1rem;
+    }
+
     .title-container {
         height: 600px;
         overflow: hidden;
@@ -723,6 +743,11 @@
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1399px) {
+    .dates{
+        margin-top: 20px;
+        font-size: 1rem;
+    }
+
     .title-container {
         height: 600px;
         overflow: hidden;
@@ -854,6 +879,11 @@
 }
 
 @media screen and (min-width: 1400px){
+    .dates{
+        margin-top: 20px;
+        font-size: 1rem;
+    }
+    
     .title-container {
         height: 600px;
         overflow: hidden;

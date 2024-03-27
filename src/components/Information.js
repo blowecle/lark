@@ -7,6 +7,10 @@ const FAQ = () => {
     <section className="faq-container">
         <div className="faq-header">CAMP INFORMATION</div>
         <div className="info-container">
+        <div className="info-item">
+                <div className="item-header">Dates</div>
+                <div className="item-content">Orientation - 19 May<br/>Classes - 20 May to 24 May<br/>Faculty Concert - 22 May</div>
+            </div>
             <div className="info-item">
                 <div className="item-header">10 Master Classes</div>
                 <div className="item-content">Ten 90-minute in-person classes<br/>with a famous instructor.</div>

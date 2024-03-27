@@ -17,6 +17,11 @@ export default function Home() {
       </div>
       <div className="main-navigation">
         <div className="main-navigation-container">
+          <div className="date-wrapper">
+            <div className="dates">Orientation: 19 May</div>
+            <div className="dates">Classes: 20-24 May</div>
+            <div className="dates">Faculty Concert: 22 May</div>
+          </div>
           <div className="main-navigation-title">SIGN UP</div>
           <div className="main-navigation-blurb">Be one of the first to sign<br/>up while spots are available.</div>
           <Link className="main-button-wrapper" to="/register">
