@@ -23,6 +23,10 @@ const FAQ = () => {
                     <div className="faq-question-answer">We believe that County Clare has long been the beating heart of Irish Traditional Music, and Ennis is it’s county seat. As such we have more than our share of sessions, performances, annual events like the Fleadh Núa, the Ennis TradFest, and the Tionól for Pat Broderick, and many local residents who are deeply involved in the craft. Additionally, it is a charming town with 22,000 inhabitants, walkable medieval shopping streets, cafés, restaurants, the best Irish Music shop in the world (Custy’s) and all the amenities of a major town (hotels, ATMs, parks, public art, other services). And a river runs through it! Ennis is conveniently located a 10-minute drive from Shannon Airport, and there is easy transportation from Dublin Airport direct to Ennis.</div>
                 </div>
                 <div className="faq-question">
+                    <div className="faq-question-header">When is the camp?</div>
+                    <div className="faq-question-answer">The camp will begin with an orientation on 19 May.  Classes will run from 20 May to 24 May with a faculty concert 22 May.</div>
+                </div>
+                <div className="faq-question">
                     <div className="faq-question-header">What does it cost and how/when will I pay?</div>
                     <div className="faq-question-answer">Lark in Ennis 2024 will cost €850 per student. That price includes a t-shirt and snacks at the Orientation Meeting on 19 May, ten 90-minute master-classes, admission to two mid-day events each class day (TradTalks and Secret Concerts), a dedicated night-time session trail for intermediate players, a ticket to the all-star Faculty Concert on 22 May at Glór (and the option to purchase a companion ticket), optional short cultural tours, a centrally located Event Hub with dedicated staff to answer questions and offer help if needed, a shuttle bus route to help you get around town, a cool event tee-shirt and stickers for your instrument cases.
                     <br/><br/>
