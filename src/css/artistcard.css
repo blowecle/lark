@@ -11,6 +11,11 @@ button{
     cursor: pointer;
 }
 
+.artist-header-image{
+    height: 105%;
+    width: auto;
+}
+
 @media screen and (max-width: 599px) {
     .artist-card-header{
         margin-top: 100px;
@@ -29,11 +34,6 @@ button{
         height: 150px;
         width: 150px;
         border: solid 5px #18371f;
-    }
-
-    .artist-header-image{
-        height: 100%;
-        width: auto;
     }
 
     .artist-card-header-name{
@@ -88,11 +88,6 @@ button{
         height: 150px;
         width: 150px;
         border: solid 5px #18371f;
-    }
-
-    .artist-header-image{
-        height: 100%;
-        width: auto;
     }
 
     .artist-card-header-name{
@@ -154,11 +149,6 @@ button{
         border: solid 5px #18371f;
     }
 
-    .artist-header-image{
-        height: 100%;
-        width: auto;
-    }
-
     .artist-card-header-name{
         font-family: LarkFont;
         font-size: 3rem;
@@ -214,11 +204,6 @@ button{
         border: solid 5px #18371f;
     }
 
-    .artist-header-image{
-        height: 100%;
-        width: auto;
-    }
-
     .artist-card-header-name{
         font-family: LarkFont;
         font-size: 3rem;
@@ -272,11 +257,6 @@ button{
         height: 150px;
         width: 150px;
         border: solid 5px #18371f;
-    }
-
-    .artist-header-image{
-        height: 100%;
-        width: auto;
     }
 
     .artist-card-header-name{

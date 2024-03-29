@@ -22,9 +22,8 @@
     }
     
     .artist-preview-image {
-        height: 100vw;
+        height: 105%;
         width: auto;
-        margin-top: 20px;
     }
 
     .single-preview-card{
@@ -75,9 +74,8 @@
     }
     
     .artist-preview-image {
-        height: 30vw;
+        height: 105%;
         width: auto;
-        margin-top: 20px;
     }
 
     .single-preview-card{
@@ -128,9 +126,8 @@
     }
     
     .artist-preview-image {
-        height: 30vw;
+        height: 105%;
         width: auto;
-        margin-top: 20px;
     }
 
     .single-preview-card{
@@ -181,96 +178,8 @@
     }
     
     .artist-preview-image {
-        height: 30vw;
+        height: 105%;
         width: auto;
-        margin-top: 20px;
-    }
-
-    .single-preview-card{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        width: 60%;
-    }
-
-    .artist-preview-name, .artist-preview-instrument{
-        font-family: LarkFont;
-        font-size: 1.5rem;
-        color: #1c7e60;
-    }
-
-    .artist-preview-name{
-        margin-top: 20px;
-    }
-
-    .artist-preview-instrument{
-        margin-bottom: 20px;
-    }
-}
-
-@media screen and (min-width: 1200px){
-    .artists-container{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-    .preview-card {
-        margin-top: 20px;
-        margin-bottom: 20px;
-        width: calc(37vw - 100px);
-        height: 90%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-    .single-preview-card{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        width: 60%;
-    }
-
-    .artist-preview-name{
-        margin-top: 20px;
-        margin-bottom: 20px;
-        font-family: LarkFont;
-        font-size: 1.5rem;
-        color: white;
-    }
-}
-
-@media screen and (min-width: 900px) and (max-width: 1199px) {
-    .preview-wrapper{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin-left: 40px;
-        margin-right: 40px;
-        margin-bottom: 40px;
-    }
-
-    .artists-wrapper{
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .preview-card {
-        width: 30vw;
-        height: 30vw;
-        border-radius: 80%;
-        border: solid 10px #dbaa74;
-        overflow: hidden;
-    }
-    
-    .artist-preview-image {
-        height: 30vw;
-        width: auto;
-        margin-top: 20px;
     }
 
     .single-preview-card{
@@ -313,15 +222,15 @@
     }
 
     .preview-card {
-        width: 30vw;
-        height: 30vw;
+        width: 25vw;
+        height: 25vw;
         border-radius: 80%;
         border: solid 10px #dbaa74;
         overflow: hidden;
     }
     
     .artist-preview-image {
-        height: 30vw;
+        height: 105%;
         width: auto;
     }
 
@@ -365,15 +274,15 @@
     }
 
     .preview-card {
-        width: 30vw;
-        height: 30vw;
+        width: 25vw;
+        height: 25vw;
         border-radius: 80%;
         border: solid 10px #dbaa74;
         overflow: hidden;
     }
     
     .artist-preview-image {
-        height: 30vw;
+        height: 105%;
         width: auto;
     }
 
