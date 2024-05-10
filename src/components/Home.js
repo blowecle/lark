@@ -16,6 +16,9 @@ export default function Home() {
         </div>
       </div>
       <div className="main-navigation">
+            <div className="grant-banner">
+              Thanks to a generous support from Clare County Arts Council, Glór, Cois na hAbhna and the Fleadh Núa we are now able to adjust pricing to encourage more local participants.  We're excited that the new fee for 2024 will be €300.  Register today!
+            </div>
         <div className="main-navigation-container">
           <div className="date-wrapper">
             <div className="dates">Orientation: 19 May</div>

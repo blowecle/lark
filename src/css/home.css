@@ -64,6 +64,15 @@
 }
 
 @media screen and (max-width: 375px) {
+    .grant-banner{
+        width: 100vw;
+        background-color: #dbaa74;
+        color: #18371f;
+        font-family: larkFont;
+        padding: 15px;
+        font-size: 1rem;
+    }
+
     .dates{
         margin-top: 20px;
         font-size: 1rem;
@@ -196,6 +205,15 @@
 }
 
 @media screen and (min-width: 376px) and (max-width: 449px) {
+    .grant-banner{
+        width: 100vw;
+        background-color: #dbaa74;
+        color: #18371f;
+        font-family: larkFont;
+        padding: 25px;
+        font-size: 1rem;
+    }
+
     .dates{
         margin-top: 20px;
         font-size: 1rem;
@@ -333,6 +351,15 @@
 }
 
 @media screen and (min-width: 450px) and (max-width: 599px) {
+    .grant-banner{
+        width: 100vw;
+        background-color: #dbaa74;
+        color: #18371f;
+        font-family: larkFont;
+        padding: 30px;
+        font-size: 1rem;
+    }
+    
     .dates{
         margin-top: 20px;
         font-size: 1rem;
@@ -471,6 +498,15 @@
 }
 
 @media screen and (min-width: 600px) and (max-width: 899px) {
+    .grant-banner{
+        width: 100vw;
+        background-color: #dbaa74;
+        color: #18371f;
+        font-family: larkFont;
+        padding: 25px;
+        font-size: 1rem;
+    }
+    
     .dates{
         margin-top: 20px;
         font-size: 1rem;
@@ -606,6 +642,15 @@
 }
 
 @media screen and (min-width: 900px) and (max-width: 1199px) {
+    .grant-banner{
+        width: 100vw;
+        background-color: #dbaa74;
+        color: #18371f;
+        font-family: larkFont;
+        padding: 25px;
+        font-size: 1.2rem;
+    }
+    
     .dates{
         margin-top: 20px;
         font-size: 1rem;
@@ -743,6 +788,15 @@
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1399px) {
+    .grant-banner{
+        width: 100vw;
+        background-color: #dbaa74;
+        color: #18371f;
+        font-family: larkFont;
+        padding: 25px;
+        font-size: 1.1rem;
+    }
+    
     .dates{
         margin-top: 20px;
         font-size: 1rem;
@@ -879,6 +933,15 @@
 }
 
 @media screen and (min-width: 1400px){
+    .grant-banner{
+        width: 100vw;
+        background-color: #dbaa74;
+        color: #18371f;
+        font-family: larkFont;
+        padding: 35px;
+        font-size: 1.5rem;
+    }
+    
     .dates{
         margin-top: 20px;
         font-size: 1rem;
