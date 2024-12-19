@@ -968,10 +968,10 @@
     }
 
     .title-image{
-        height: 1400px;
-        width: auto;
-        top: -400px;
-        left: -15px 
+        height: auto;
+        left: 0px;
+        top: -200px;
+        width: 100vw;
     }
 
     .main-title{

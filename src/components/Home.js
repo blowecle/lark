@@ -17,41 +17,44 @@ export default function Home() {
       </div>
       <div className="main-navigation">
             <div className="grant-banner">
-              Thanks to a generous support from Clare County Arts Council, Glór, Cois na hAbhna and the Fleadh Núa we are now able to adjust pricing to encourage more local participants.  We're excited that the new fee for 2024 will be €300.  <Link to="/register"><button className="main-navigation-button">Register today!</button></Link>
+              Lark in Ennis is excited to return for a second year.  Registration begins soon.  Check back for more information.
             </div>
         <div className="main-navigation-container">
           <div className="date-wrapper">
-            <div className="dates">Orientation: 19 May</div>
-            <div className="dates">Classes: 20-24 May</div>
-            <div className="dates">Faculty Concert: 22 May</div>
+            <div className="dates"
+            style={{
+              marginTop: "1.5rem",
+              marginBottom: "1rem"
+            }}
+            >Lark in Ennis 2025: 29 June to 4 July</div>
           </div>
-          <div className="main-navigation-title">SIGN UP</div>
+          {/* <div className="main-navigation-title">SIGN UP</div>
           <div className="main-navigation-blurb">Be one of the first to sign<br/>up while spots are available.</div>
           <Link className="main-button-wrapper" to="/register">
             <button className="main-navigation-button">Register</button>
-          </Link>
+          </Link> */}
         </div>
-        <div className="main-navigation-container">
+        {/* <div className="main-navigation-container">
           <div className="main-navigation-title">MEET THE<br/>INSTRUCTORS</div>
           <div className="main-navigation-blurb">Check out the instructors who will guide you on your musical journey.</div>
           <Link className="main-button-wrapper" to="/artists">
             <button className="main-navigation-button">The Team</button>
           </Link>
-        </div>
-        <div className="main-navigation-container">
+        </div> */}
+        {/* <div className="main-navigation-container">
           <div className="main-navigation-title">CAMP INFO</div>
           <div className="main-navigation-blurb">Find information about the camp,<br/>venue, dates, and events.</div>
           <Link className="main-button-wrapper" to="/information">
             <button className="main-navigation-button">Information</button>
           </Link>
-        </div>
+        </div> */}
       </div>
       <div className="lower-blurb-container">
         <div className="lower-blurb-title">
-          Lark in Ennis aims to be the premier summer camp in Ireland for adult players of traditional Irish music
+          Lark in Ennis is the premier summer camp in Ireland for adult players of traditional Irish music
         </div>
         <div className="lower-blurb-text">
-          For the first year we're running Lark as a proof of concept and will be keeping enrollment and classes small enough to give instructors time to advice students on their best path forward.  Additional support will come from a nightly session trail tailored to intermediate skill levels and a lunchtime series of talks about aspects of playing traditional Irish music.  An instructor concert as well as daily 'secret concerts' will further expose attendees to the best of traditional Irish music.
+        As Lark enters its second year, we’re building on the success of the first by continuing to prioritize personalized guidance for students. Plans include expanding opportunities for intermediate players through tailored nightly sessions and offering engaging talks on various aspects of traditional Irish music during lunchtime. Attendees can also look forward to more performances, including an instructor concert and daily 'secret concerts,' celebrating the vibrant tradition of Irish music.
         </div>
       </div>
       <div className="bottom-div"/>
