@@ -25,7 +25,10 @@ export default function Home() {
             <div className="dates">Lark in Ennis 2025: 29 June to 4 July</div>
             <div className="dates">Orientation: 29 June</div>
             <div className="dates">Classes: 30 June to 4 July</div>
-            <div className="dates">Instructor Concert: 3 July</div>
+            <div className="dates"
+            style={{
+              marginBottom: '20px'
+            }}>Instructor Concert: 3 July</div>
           </div>
           {/* <div className="main-navigation-title">SIGN UP</div>
           <div className="main-navigation-blurb">Be one of the first to sign<br/>up while spots are available.</div>
